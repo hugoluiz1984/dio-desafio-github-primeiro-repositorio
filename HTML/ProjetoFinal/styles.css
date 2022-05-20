@@ -3,10 +3,11 @@
 body {
     margin: 0;
     padding: 0;
-    color: #FFFFFF;
+    color: #fff;
     font-family: 'Roboto', sans-serif;
 }
-.wrapper {
+
+.header-wrapper {
     height: 100vh;
     width: 100vw;
     background: linear-gradient(-45deg, #5e0878, #085078, #4ca59b, #1fa194);
@@ -16,6 +17,46 @@ body {
     justify-content: center;
     align-items: center;
     animation: backgroundTransition 8s ease-in-out infinite;
+}
+.checkbox {
+    height: 100px;width: 100px; display: flex;justify-content:center;position: relative;cursor: pointer;
+}
+.checkbox .trace{
+    width:90px;
+    height:8px;
+    background-color:#fff;
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+.checkbox .trace:nth-child(1) {
+    top:26px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(2) {
+    top:46px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(3) {
+    top:66px;
+    transform: rotate(0);
+}
+#toggle{
+    display:none;
+}
+#toggle:checked + .checkbox .trace:nth-child(1){
+    transform: rotate(45deg);
+    top: 47px;
+}
+#toggle:checked + .checkbox .trace:nth-child(2){
+    transform: translateX(-100px);
+    width:30px;visibility:hidden;
+    opacity: 0;
+}
+#toggle:checked + .checkbox .trace:nth-child(3){
+    transform: rotate(-45deg);
+    top: 48px;
 }
 
 h1 {
@@ -31,7 +72,7 @@ h2 {
     display: flex;
 }
 
-a {
+.social-media a {
     text-decoration: none;
     color:#fff; 
     font-size: 24px;
@@ -44,9 +85,9 @@ a {
     transition:.5s cubic-bezier(0.55, 0.025, 0.675, 0.97);
 }
 
-a:hover{
+.social-media a:hover{
     color:#085078;
-    background-color:#FFF;
+    background-color:#ccc;
 }
 @keyframes backgroundTransition {
     0%{
