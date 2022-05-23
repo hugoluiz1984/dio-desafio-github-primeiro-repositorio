@@ -1,4 +1,4 @@
-# Projeto sobre Git/GitHub
+# Projeto sobre Git/GitHub da Bootcamp.
 Desafio de projeto sobre Git/GitHub.
 
 ## 🔗 Links
