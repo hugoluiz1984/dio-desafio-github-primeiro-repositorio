@@ -1,44 +1,54 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 * {
-  font-family: "Open Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(157, 225, 252)
 }
 
 button {
-  border: 1px solid rgb(105, 197, 255);
-  border-radius: 5px;
-  background-color: rgb(227, 248, 255);
-  color: rgb(105, 197, 255);
-  text-align: center;
-  padding: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(63, 62, 62);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+    font-size: 14px;
 }
+button:hover {
+
+    background-color: white;
+    color: black;
+  }
 
 input[type="text"] {
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 14px;
 }
 
 #tasks {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 24px;
 }
 
 .task-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 :checked + label {
-  text-decoration: line-through;
-  color: grey;
+    text-decoration: line-through;
+    color: grey;
 }
