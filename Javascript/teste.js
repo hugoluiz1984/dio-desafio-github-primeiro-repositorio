@@ -7,7 +7,7 @@ for (let i = 1; i <=9; i++){ //criar array para os fatoriais com
         fatorial=fatorial*j;
         console.log(fatorial,j,i)
     }
-    arr.push(fatorial)
+    arr.push(fatorial) 
 }
 console.log(arr)
 
